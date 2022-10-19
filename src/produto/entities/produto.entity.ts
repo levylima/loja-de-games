@@ -1,5 +1,5 @@
 import { IsNotEmpty } from "class-validator"
-import { Column, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm"
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm"
 
 
 
@@ -15,4 +15,5 @@ export class Produto {
 
     @UpdateDateColumn()
     data: Date
+
 }
